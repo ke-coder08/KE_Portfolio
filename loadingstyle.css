@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+
+html{
+    font-family: Poppins;
+}
+body{
+background-color: black;
+background-size: cover;
+background-attachment: fixed;
+cursor: none;
+}
+
+.test{
+animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+.pointer{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding:3px;
+    position:absolute;
+    box-shadow: 0 0 20px 0 white;
+}
+
+.pointer::before{
+    width:20px;
+    height: 20px;
+    display: block;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    content: "";
+    transform: translateX(-50%)
+    translateY(-50%);
+    opacity: .5;
+    animation: cursora 1s linear infinite;
+    box-shadow: 0 0 20px 0 white;
+}
+
+@keyframes cursora {
+    0%{filter: hue-rotate(0deg)}
+    100%{filter: hue-rotate(360deg);}
+}
+
+
+.text{
+align-items: center;
+padding-top: 300px;
+font-size: 34px;
+text-align: center;
+color:white;
+font-weight:lighter;
+letter-spacing: 0.05em;
+text-shadow: 0 0 10px black, /* for shadow */
+             0 0 20px rgb(255, 253, 253),
+             0 0 30px black,
+             0 0 50px rgb(250, 250, 250);
+}
+
+.spinner-box{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.conf-border1{
+    width: 100px;
+    height: 100px;
+    padding:3px;
+    position:absolute;
+    top:500px;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(185, 184, 184);
+    animation: config-clockwise 3s ease-in-out 0s infinite alternate;
+}
+
+.conf-border2{
+    width: 80px;
+    height: 80px;
+    padding:3px;
+    top:600px;
+    left: 180px;
+    position:absolute;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(185, 184, 184);
+    transform: rotate(45deg);
+    animation: config-xclockwise 3s ease-in-out 0s infinite alternate;
+}
+
+
+.conf-core1{
+    width:100%;
+    height: 100%;
+    
+}
+
+.conf-core2{
+    width:100%;
+    height: 100%;
+    background: transparent;}
+
+
+
+@keyframes config-clockwise {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes config-xclockwise {
+    0%{
+        transform: rotate(45);
+    }
+    25%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(-135deg);
+    }
+    75%{
+        transform: rotate(-225deg);
+    }
+    100%{
+        transform: rotate(-315deg);
+    }
+}
+
