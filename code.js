@@ -1,3 +1,5 @@
+
+//cursor selector load page
 const cursor = document.querySelector(".pointer");
 
 document.addEventListener("mousemove",(event)=>{
@@ -13,3 +15,4 @@ document.addEventListener("mousemove",(event)=>{
 document.addEventListener("nomouse",()=>{
     cursor.style.display="none";
 })
+
