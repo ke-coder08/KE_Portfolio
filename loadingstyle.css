@@ -2,18 +2,19 @@
 
 
 html{
-    font-family: Poppins;
+ font-family: Poppins;
 }
+
 body{
-background-color: black;
-background-size: cover;
-background-attachment: fixed;
-cursor: none;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: none;
 }
 
 .test{
-animation: fadein 2s;
-padding: 20px;
+    animation: fadein 2s;
+    padding: 20px;
 }
 
 
@@ -22,35 +23,6 @@ padding: 20px;
     to{opacity: 0;}
 }
 
-.pointer{
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    padding:3px;
-    position:absolute;
-    box-shadow: 0 0 20px 0 white;
-}
-
-.pointer::before{
-    width:20px;
-    height: 20px;
-    display: block;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-    position:absolute;
-    content: "";
-    transform: translateX(-50%)
-    translateY(-50%);
-    opacity: .5;
-    animation: cursora 1s linear infinite;
-    box-shadow: 0 0 20px 0 white;
-}
-
-@keyframes cursora {
-    0%{filter: hue-rotate(0deg)}
-    100%{filter: hue-rotate(360deg);}
-}
 
 
 .text{
