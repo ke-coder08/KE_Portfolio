@@ -13,6 +13,7 @@
     </head>
 
     <script src="code.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <body>
         <div class="container">
@@ -88,13 +89,13 @@
 
                 <h1>CONTACT ME</h1>
 
-                    <form action="https://formsubmit.co/ke.coder08@gmail.com" method="POST">
+                    <form onsubmit="SendEmail(); reset(); return false">
                         <input type="text" name="name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email" required>
                         <input type="text" name="companyname" placeholder="Company Name" required>
                         <input type="text" name="subject" placeholder="Subject" required>
                         <textarea name="message" rows="10" cols="20" placeholder="Message"></textarea>
-                        <button type="button" id="buttonsubmit">Submit</button>
+                        <button type="submit" id="buttonsubmit">Submit</button>
                     </form>
 
             </section>
