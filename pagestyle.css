@@ -240,18 +240,31 @@ section#skills ul li:hover{
     margin-bottom: 1%;
 }
 
+/*SECTION PROJECTS******************/
+
+section#projects{
+    background-color: white;
+}
+
+section#projects h1{
+    font-size: 3rem;
+    color:black;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
 
 /*SECTION CONTACT******************/
 
 section#contact{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
    
 }
 
 section#contact h1{
     padding-top: 100px;
     font-size: 3rem;
-    color:black;
+    color:white;
     letter-spacing: 0.05rem;
     font-weight: lighter;
 
