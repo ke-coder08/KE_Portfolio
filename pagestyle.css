@@ -251,8 +251,30 @@ section#projects h1{
     color:black;
     letter-spacing: 0.05rem;
     font-weight: lighter;
+}
+
+section#projects h6{
+    color:black;
     padding-bottom: 50px;
 }
+
+
+section#projects table tr th #pic{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+section#projects table tr th #pic:hover{
+    box-shadow: 0rem 0rem 3rem 0.20rem rgb(105, 215, 215);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+section#projects table tr td label{
+   font-style: bold;
+}
+
 
 /*SECTION CONTACT******************/
 
@@ -296,6 +318,7 @@ section#contact form input,textarea,button{
     font-size: small;
     border: 0;
     color: white;
+    margin-bottom:2%;
 }
 
 #buttonsubmit:hover{
