@@ -1,7 +1,5 @@
 
-
-
-
+//SendEmail
 function SendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
