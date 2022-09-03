@@ -192,8 +192,11 @@ section#about h1{
     color:black;
     letter-spacing: 0.05rem;
     font-weight: lighter;
-    padding-bottom: 50px;
+}
 
+section#about h5{
+    padding-bottom: 50px;
+    color:rgb(45, 98, 98);
 }
 
 
@@ -251,11 +254,6 @@ section#projects h1{
     color:black;
     letter-spacing: 0.05rem;
     font-weight: lighter;
-}
-
-section#projects h6{
-    color:black;
-    padding-bottom: 50px;
 }
 
 
