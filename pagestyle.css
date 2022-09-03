@@ -222,6 +222,11 @@ section#skills h1{
     color:white;
     letter-spacing: 0.05rem;
     font-weight: lighter;
+}
+
+section#skills h5{
+    color:white;
+    font-weight: lighter;
     margin-bottom: 3%;
 }
 
