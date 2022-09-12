@@ -11,35 +11,38 @@ html{
 
 body{
     background-color:#1b1c2a;
-    background-image: url("images/Bloopy\ bg.png");
+    background-image: url("images/Bloopy-bg.avif");
     background-size:cover;
     background-attachment: fixed;
     z-index: 0;
 }
 
+/*BLOOPY********************************/
+
 .bloopy{
-    margin-top: 10%;
+    margin-top: 20%;
+
+    min-width: 60%;
+    max-width: 60%;
    
 }
 
 .bloopy img{
-    margin-left:30%;
-    padding-left: 5%;
+    background-color: white;
+    padding-top: 10%;
+    margin-left:20%;
+    padding-left: 20%;
     
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 50%;
+    max-width: 50%;
     animation: jump 3s ease-in-out 0s infinite alternate;
 }
 
-.bloopy img:hover{
 
-    margin-left:30%;
-    padding-left: 5%;
-    
 
-    min-width: 100%;
-    max-width: 100%;
-}
+/*TOOLTIP*****************************/
+
+/*BG**********************************/
 
 .laptop{
     width: 20%;
