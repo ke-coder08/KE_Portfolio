@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Poppins;
+}
+
+body{
+    background-color:#1b1c2a;
+    background-image: url("images/Bloopy-bg.avif");
+    background-size:cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+/*HOME.HTML BLOOPY********************************/
+
+.bloopy{
+    margin-top: 20%;
+
+}
+
+.bloopy img{
+    background-color: white;
+    padding-top: 10%;
+    margin-left:20%;
+    
+    min-width: 100%;
+    max-width: 100%;
+    animation: jump 3s ease-in-out 0s infinite alternate;
+}
+
+/***************************************************************/
+/*USER.HTML BLOOPY*/
+.bloopy_user{
+    background-color: white;
+}
+
+.bloopy_user img{
+    margin-right: 100%;
+    padding-right: 50%;
+    
+    min-width: 100%;
+    max-width: 100%;
+    animation: jump 3s ease-in-out 0s infinite alternate;
+}
+
+/*TYPEWRITER*/
+.bloopy_user .typewriter{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.bloopy_user .typewriter h1 {
+    color: black;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.01em solid #1b1c2a; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 65% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: #1b1c2a}
+  }
