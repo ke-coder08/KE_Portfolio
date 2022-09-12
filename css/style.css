@@ -10,35 +10,30 @@ html{
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: Poppins;
+    animation: fadeTransition 0.75s;
 }
+
+@keyframes fadeTransition{ /*Fade Transition*/
+    from{
+        opacity: 0;
+        transform:rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform:rotateX(0);
+    }
+}
+
 
 body{
     background-color:#1b1c2a;
-    background-image: url("images/Bloopy-bg.avif");
-    background-size:cover;
-    background-attachment: fixed;
-    z-index: 0;
 }
 
-/*HOME.HTML BLOOPY********************************/
-
-.bloopy{
-    margin-top: 20%;
-
-}
-
-.bloopy img{
-    background-color: white;
-    padding-top: 10%;
-    margin-left:20%;
-    
-    min-width: 100%;
-    max-width: 100%;
-    animation: jump 3s ease-in-out 0s infinite alternate;
-}
 
 /***************************************************************/
-/*USER.HTML BLOOPY*/
+
+/*INTRO/2.HTML -- BLOOPY*/
 .bloopy_user{
     background-color: white;
 }
@@ -73,7 +68,7 @@ body{
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 65% }
+    to { width: 60% }
   }
   
   /* The typewriter cursor effect */
@@ -81,3 +76,207 @@ body{
     from, to { border-color: transparent }
     30% { border-color: #1b1c2a}
   }
+
+
+/*FORM.HTML -- SECTION CONTACT******************/
+section#contact h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3rem;
+    color:white;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+    padding-bottom:60px;
+
+}
+
+section#contact form{
+    width:100%;
+    height: 100%;
+    margin-top: 20px;
+    
+}
+
+section#contact form input,button{
+    left:0;
+    bottom:0;
+    margin-left: 35%;
+    margin-bottom: 1.50%;
+    width:25%;
+    display: block;
+    padding: 20px;
+    resize: none;
+
+    border-radius: 5px;
+
+}
+
+#buttonsubmit{
+    left:0;
+    margin-left: 36%;
+    background-color: rgb(70, 174, 174);
+    margin-top: 50px;
+    margin-bottom:2%;
+
+    font-size: small;
+    color: white;
+
+    border: 0;
+    
+    
+    
+}
+
+#buttonsubmit:hover{
+    color:black;
+    cursor: pointer;
+}
+
+/***************************************************************/
+
+/*MAIN.HTML ********************************/
+.container{
+    min-width: 100%;
+    max-width: 100%;
+
+    
+}
+
+.bg img{
+    position:fixed; /*To stay the bg*/
+
+    min-width: 100%;
+    max-width: 100%;
+
+    margin-left: 8%;
+
+}
+
+.navbar{    
+    position:fixed;
+    border-top: 0.05rem;
+    border-top-color: rgb(70, 174, 174);
+    border-top-style: solid;
+    display: flex;
+    width: 5%;
+    height: 100%;
+
+
+    background: #1b1c2a;
+    box-shadow: 0rem 0rem 1rem 1rem rgb(70, 174, 174);
+    opacity: 10;   
+ 
+    
+}
+
+
+.navbar ul li{
+    margin-left: 25%;
+    padding-top: 200px;
+    
+   
+   
+}
+
+
+.navbar ul li img{
+    max-width: 50%;
+    min-width: 50%;
+
+    cursor: pointer;
+}
+
+.navbar ul li img:hover{
+    max-width: 55%;
+    min-width: 55%;
+    
+    background: rgb(70, 174, 174);
+    border-radius: 10px;
+}
+
+
+
+.laptop{
+    position:fixed;
+    margin-top: 26%;
+    margin-left: 23%;
+
+    width: 13%;
+    height: 18%;
+
+    border-radius: 20px;
+
+    /* background: white; */
+    cursor: pointer;
+}
+
+.projector{
+    position:fixed;
+    margin-top: 32%;
+    margin-left: 38%;
+
+    width: 6.5%;
+    height: 5%;
+
+    border-radius: 20px;
+    
+    /* background: pink; */
+    cursor: pointer;
+}
+
+
+.cat{
+    position:fixed;
+    margin-top: 37%;
+    margin-left: 66%;
+
+    width: 2%;
+    height: 5%;
+
+    border-radius: 20px;
+
+    /* background: orange; */
+    cursor: pointer;
+}
+
+.clock{
+    position:fixed;
+    margin-top: 19%;
+    margin-left: 67%;
+
+    width: 4%;
+    height: 5%;
+
+    border-radius: 50px;
+
+
+    /* background: yellowgreen; */
+    cursor: pointer;
+}
+
+.bloopysel{
+    position:fixed;
+    margin-top: 33%;
+    margin-left: 80%;
+
+    width: 10%;
+    height: 25%;
+
+    border-radius: 50px;
+
+
+    /* background: gray; */
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.bloopy img{
+    position:fixed;
+    margin-top: 30%;
+    margin-left: 75%;
+
+    max-width: 20%;
+    min-width: 20%;
+
+}

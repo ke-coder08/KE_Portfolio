@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>KE_PORTFOLIO</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UI-Compatible" content="ie=edge"> 
+        <link href="css/pagestyle.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <script src="js/code.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><a href="#home">KE</a></div>
+                <div class="bg"></div>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+ 
+
+            <section id="home">
+               
+                    <h2>HI! I'M </h2> 
+
+                    <h1><strong><div class id="color">K</div>yle 
+                       <div class id="color">E</div>rica A. Danque</strong></h1>
+   
+                       <a href="#contact"><button type="button" id="buttonhome"> CONTACT ME</button></a>
+   
+                        <div class="whiteline"> </div>
+
+
+              
+            </section>
+
+            <section id="about">
+
+                <h1>ABOUT ME</h1>
+                <h5><q>You will never know someone's capability unless you work with them</q></h5>
+
+                <p> &emsp;Greetings! I am Kyle Erica A. Danque, taking a Bachelor of Science in Information 
+                    Technology at De La Salle University - Dasmarinas Cavite, 
+                    Philippines. I learned different programming languages along with web hosting sites such as
+                    CPANEL, and different IDE. I've decided to focus my skills as a developer/designer. 
+                    The projects that I have included in this portfolio is just twenty percent of what I had 
+                    already developed. I believe that my experience and passion for learning will help your 
+                    company to reach its goals. I look forward to discussing the position, my qualifications, 
+                    and working with you all. I am excited to be part of the team! Thank you for the time to know me!
+                </p>
+            </section>
+
+
+            <section id="skills">
+               
+                <h1>SKILLS </h1>
+                <h5>Experience Level: 1+ year/s to the following: </h5>
+                
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                </ul>
+
+                <hr id="hrskills">
+
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>PYTHON</li>
+                    <li>JAVA</li>
+                    <li>.NET</li>
+                    <li>ASP.NET</li>
+                    <li>ANDROID DEV + SQLITE</li>
+                </ul>
+
+                <hr id="hrskills">
+
+                <ul>
+                    <li>CANVA</li>
+                    <li>FIGMA</li>
+                    <li>MARVEL</li>
+                    <li>PHOTOPEA</li>  
+                    <li>ADOBE ANIMATE</li>
+                    <li>ADOBE PS</li>
+
+                </ul>
+
+
+            </section>
+
+            <section id="projects">
+                <h1>PROJECTS</h1>
+
+                <table>
+                    <tr>
+                        <th><img id="pic" src="images/up1.JPG"> </th>
+                        <th><img id="pic" src="images/up2.JPG"> </th>
+                    </tr>
+
+                    <tr>
+                        <td><label>Music Online Store: Creating and Working with databases using SQL</label></td>
+                        <td><label>Payroll System: Creating and Working with databases using SQL</label></td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section id="contact">
+
+                <h1>CONTACT ME</h1>
+
+                    <form>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="companyname" placeholder="Company Name" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <textarea id="message" rows="10" cols="20" placeholder="Message"></textarea>
+                        <button type="submit" id="buttonsubmit" onclick="SendEmail()">Submit</button>
+                    </form>
+
+            </section>
+
+            <!-- Messenger Chat plugin Code -->
+                <div id="fb-root"></div>
+
+                <!-- Your Chat plugin code -->
+                <div id="fb-customer-chat" class="fb-customerchat">
+                </div>
+
+                <script>
+                var chatbox = document.getElementById('fb-customer-chat');
+                chatbox.setAttribute("page_id", "102887549227089");
+                chatbox.setAttribute("attribution", "biz_inbox");
+                </script>
+
+                <!-- Your SDK code -->
+                <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                    xfbml            : true,
+                    version          : 'v14.0'
+                    });
+                };
+
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+            <div class="footer">
+                <p>
+                   <i>*Updated as of Aug 2022</i>
+            </div>
+           
+
+
+        </div>
+    </body>
+
+</html>
+
+
+
