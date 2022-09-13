@@ -360,6 +360,18 @@ section#contact form input,button{
     overflow: auto;
   }
 
+  .popup .content img{
+    min-width: 10%;
+    max-width: 10%;
+  }
+
+  .popup .content img:hover{
+    min-width: 11%;
+    max-width: 11%;
+  }
+
+
+
   .popup .content a:hover{
    color:aqua;
   }
