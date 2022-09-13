@@ -169,28 +169,51 @@ section#contact form input,button{
     
 }
 
+  
+.navbar .tooltiptext {
+    width: 100px;
+    background-color: rgb(70, 174, 174);
+    /* background-color: red; */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bolder;
+    
+
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+  }
+  
+
+
 
 .navbar ul li{
-    margin-left: 25%;
-    padding-top: 200px;
-    
-   
-   
+    padding-top: 80px;
+
 }
 
 
-.navbar ul li img{
-    max-width: 50%;
-    min-width: 50%;
-
+.navbar ul li img {
+    
+    max-width: 30%;
+    min-width: 30%;
+    
+    margin-left: 35%;
+    margin-top: 10px;
+    margin-right: 50px;
     cursor: pointer;
 }
 
+
+
 .navbar ul li img:hover{
-    max-width: 55%;
-    min-width: 55%;
+    max-width: 35%;
+    min-width: 35%;
     
-    background: rgb(70, 174, 174);
+    
+    background: #1b1c2a;
     border-radius: 10px;
 }
 
@@ -198,15 +221,15 @@ section#contact form input,button{
 
 .laptop{
     position:fixed;
-    margin-top: 26%;
-    margin-left: 23%;
+    margin-top: 28%;
+    margin-left: 24%;
 
     width: 13%;
-    height: 18%;
+    height: 13%;
 
     border-radius: 20px;
 
-    /* background: white; */
+    /* background: black; */
     cursor: pointer;
 }
 
@@ -254,29 +277,17 @@ section#contact form input,button{
     cursor: pointer;
 }
 
-.bloopysel{
-    position:fixed;
-    margin-top: 33%;
-    margin-left: 80%;
 
-    width: 10%;
-    height: 25%;
+ .laptop, .projector, .cat, .clock, span{
+    color:transparent;
+    text-align: center;
 
-    border-radius: 50px;
-
-
-    /* background: gray; */
-    cursor: pointer;
-
-    z-index: 1;
+    font-weight: bold;
 }
 
-.bloopy img{
-    position:fixed;
-    margin-top: 30%;
-    margin-left: 75%;
-
-    max-width: 20%;
-    min-width: 20%;
-
+ .laptop, .projector, .cat, .clock, span:hover{
+    
+    color:rgb(255, 255, 255);
 }
+
+
