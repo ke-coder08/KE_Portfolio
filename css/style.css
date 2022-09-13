@@ -170,47 +170,48 @@ section#contact form input,button{
 }
 
   
-.navbar .tooltiptext {
+.navbar .text {
+    position: fixed;
+    height: 100px;
     width: 100px;
+
     background-color: rgb(70, 174, 174);
-    /* background-color: red; */
     color: #fff;
     text-align: center;
     border-radius: 6px;
     font-weight: bolder;
-    
+    font-size: smaller;
 
-  
-    /* Position the tooltip */
-    position: absolute;
-   
+    
   }
   
 
 
 
-.navbar ul li {
-    padding-top: 10px;
+.navbar ul li{
+    padding-top: 100px;
 
 }
 
 
 .navbar ul li span img {
     
-    max-width: 5%;
-    min-width: 5%;
+    max-width: 60%;
+    min-width: 60%;
     
-    margin-left: 35%;
+    margin-left: 20%;
     margin-top: 10px;
-    margin-right: 50px;
+    margin-right: 20%;
     cursor: pointer;
+
+ 
 }
 
 
 
-.navbar ul li img:hover{
-    max-width: 5%;
-    min-width: 5%;
+.navbar ul li span img:hover{
+    max-width: 65%;
+    min-width: 65%;
     
     
     background: #1b1c2a;
@@ -290,4 +291,9 @@ section#contact form input,button{
     color:rgb(255, 255, 255);
 }
 
-
+/**/
+/* #popup1{
+    color: white;
+    text-align: center;
+    background-color: aqua;
+} */
