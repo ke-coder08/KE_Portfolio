@@ -183,22 +183,22 @@ section#contact form input,button{
   
     /* Position the tooltip */
     position: absolute;
-    z-index: 2;
+   
   }
   
 
 
 
-.navbar ul li{
-    padding-top: 80px;
+.navbar ul li {
+    padding-top: 10px;
 
 }
 
 
-.navbar ul li img {
+.navbar ul li span img {
     
-    max-width: 30%;
-    min-width: 30%;
+    max-width: 5%;
+    min-width: 5%;
     
     margin-left: 35%;
     margin-top: 10px;
@@ -209,8 +209,8 @@ section#contact form input,button{
 
 
 .navbar ul li img:hover{
-    max-width: 35%;
-    min-width: 35%;
+    max-width: 5%;
+    min-width: 5%;
     
     
     background: #1b1c2a;
