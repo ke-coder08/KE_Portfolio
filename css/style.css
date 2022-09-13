@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    text-decoration: none;
 }
 
 html{
@@ -172,8 +173,7 @@ section#contact form input,button{
   
 .navbar .text {
     position: fixed;
-    height: 100px;
-    width: 100px;
+    width: 8%;
 
     background-color: rgb(70, 174, 174);
     color: #fff;
@@ -291,9 +291,95 @@ section#contact form input,button{
     color:rgb(255, 255, 255);
 }
 
-/**/
-/* #popup1{
+/*POPUP*/
+
+#laptop_pop,#projector_pop,#cat_pop,#clock_pop, 
+#bloopy_pop{
     color: white;
     text-align: center;
-    background-color: aqua;
-} */
+   
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+            
+    margin: 20% 32%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: fixed;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color:rgb(70, 174, 174);
+  }
+
+  .popup .content {
+    padding-top: 10%;
+    color: black;
+    font-weight: bold;
+
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  /*RESPONSIVENESS*/
+
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+
+    .navbar .text{
+        width: 20%;
+      }
+
+    .laptop, .projector, .cat, .clock, span:hover{
+        font-size: 80%;
+    }
+
+    .bg{
+        min-width: fit-content;
+        max-width: fit-content;
+    }
+
+
+    
+   
+
+  }
