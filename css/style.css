@@ -14,7 +14,7 @@ html{
     animation: fadeTransition 0.75s;
 }
 
-@keyframes fadeTransition{ /*Fade Transition*/
+@keyframes fadeTransition{ /*Fade Transition**********************/
     from{
         opacity: 0;
         transform:rotateX(-10deg);
@@ -48,7 +48,7 @@ body{
     animation: jump 3s ease-in-out 0s infinite alternate;
 }
 
-/*TYPEWRITER*/
+/*TYPEWRITER***************************************************/
 .bloopy_user .typewriter{
     padding-top: 5%;
     display: flex;
@@ -79,7 +79,7 @@ body{
   }
 
 
-/*FORM.HTML -- SECTION CONTACT******************/
+/*FORM.HTML -- SECTION CONTACT**************************************/
 section#contact h1{
     text-align: center;
     padding-top: 100px;
@@ -135,7 +135,7 @@ section#contact form input,button{
 
 /***************************************************************/
 
-/*MAIN.HTML ********************************/
+/*MAIN.HTML ***************************************************/
 .container{
     min-width: 100%;
     max-width: 100%;
@@ -292,7 +292,7 @@ section#contact form input,button{
     color:rgb(255, 255, 255);
 }
 
-/*POPUP*/
+/*MODAL*************************************************/
 
 #laptop_pop,#projector_pop,#cat_pop,#clock_pop, 
 #bloopy_pop, #skills_pop, #project_pop, #archived_pop, #info_pop{
@@ -376,7 +376,7 @@ section#contact form input,button{
    color:aqua;
   }
   
-  /*RESPONSIVENESS*/
+  /*RESPONSIVENESS*****************************/
 
   @media screen and (max-width: 700px){
     .popup{
