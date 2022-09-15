@@ -400,7 +400,18 @@ section#contact form input,button{
     border: 1px;
     border-color: white;
     border-style: solid;
-    
+}
+
+  .projects tr{
+  font-weight:400;
+}
+
+  .projects tr a{
+  color: white;
+}
+
+  .projects tr a:hover{
+  text-decoration:underline;
 }
 
 
