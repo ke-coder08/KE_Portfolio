@@ -375,7 +375,15 @@ section#contact form input,button{
   .popup .content a:hover{
    color:aqua;
   }
+
+  /*PROJECT.HTML********************************/
+  .projects{
+    color: white;
+  }
   
+
+
+
   /*RESPONSIVENESS*****************************/
 
   @media screen and (max-width: 700px){
@@ -396,9 +404,5 @@ section#contact form input,button{
         min-width: fit-content;
         max-width: fit-content;
     }
-
-
-    
-   
 
   }
