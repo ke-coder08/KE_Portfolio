@@ -380,6 +380,10 @@ section#contact form input,button{
   .projects{
     color: white;
   }
+
+  .projects h1{
+    text-align: center;
+  }
   
 
 
