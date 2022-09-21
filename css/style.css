@@ -419,7 +419,9 @@ section#contact form input,button{
   }
 
   .projects tr a:hover{
-  text-decoration:underline;
+    color: rgb(146, 239, 239);
+   
+    
   }
 
 
