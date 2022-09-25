@@ -404,9 +404,10 @@ section#contact form input,button{
   }
 
   .projects table th{
+    padding: 10px;
     position: sticky;
     top:0;
-    background-color: #1b1c2a;
+    background-color: #141852;
     
   }
 
