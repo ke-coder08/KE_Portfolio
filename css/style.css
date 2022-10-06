@@ -196,15 +196,15 @@ section#contact form input,button{
 
 .navbar ul li{
     padding-top: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
 
 }
 
 
 .navbar ul li span img {
     
-    max-width: 60%;
-    min-width: 60%;
+    max-width: 40%;
+    min-width: 40%;
     
     margin-left: 20%;
     margin-top: 10px;
@@ -217,8 +217,8 @@ section#contact form input,button{
 
 
 .navbar ul li span img:hover{
-    max-width: 65%;
-    min-width: 65%;
+    max-width: 50%;
+    min-width: 50%;
     
     
     background: #1b1c2a;
@@ -372,8 +372,7 @@ section#contact form input,button{
   }
 
   .popup .content img:hover{
-    min-width: 11%;
-    max-width: 11%;
+    transform:scale(1.20);
   }
 
 
@@ -382,16 +381,40 @@ section#contact form input,button{
    color:aqua;
   }
 
-  /*PROJECT.HTML********************************/
-  .projects{
+  /*PROJECT.HTML AND CERTIFICATE.HTML********************************/
+  .projects, .certi{ /*Project and Certificates*/
     color: white;
   }
 
-  .projects h1{
+  .projects, .certi h1{
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
   }
+
+  .certi h5{
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+
+  .certi img{ /*Certificates Images*/
+    margin-left: 50px;
+    display:inline-block;
+    max-width: 20%;
+    max-height: 20%;
+    margin-bottom: 25px;
+
+    cursor: pointer;
+  }
+
+  .certi img:hover{
+    transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   
+    box-shadow: 2px 2px 5px 2px rgb(146, 239, 239);
+  }
+
 
   .projects table{
     width: 100%;
@@ -442,7 +465,7 @@ section#contact form input,button{
 
   /*RESPONSIVENESS*****************************/
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 650px ){
     .popup{ /*Size of the popup container*/
       width: 60%;
       height:50%;
@@ -486,13 +509,21 @@ section#contact form input,button{
     }
 
     .bloopy_user img{
-      margin-top: 20%;
+      padding-top: 10%;
+      margin-top: 2%;
 
-      min-width: 30%;
-      max-width: 30%;
+      min-width: 20%;
+      max-width: 20%;
     }
 
-    /*TABLE_PROJECTS****************/
+    .navbar ul li{
+      padding-top: 30px;
+      padding-bottom: 50px;
+  
+  }
+
+
+    /*TABLE_PROJECTS RESPONSIVENESS****************/
     .projects table{
       font-size: smaller;
     }
@@ -502,4 +533,8 @@ section#contact form input,button{
       
     }
 
+    /*CERTIFICATES RESPONSIVENESS*/
+    .certi img:hover{
+      transform: scale(2);
+    }
   }
